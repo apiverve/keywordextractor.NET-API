@@ -1,38 +1,69 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>APIVerve.API.KeywordExtractor</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.5</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeContentInPack>true</IncludeContentInPack>
+
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl>https://apiverve.com/marketplace/api/keywordextractor</PackageProjectUrl>
+    <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>Keyword Extractor is a simple tool for extracting keywords from a text. It returns the keywords and the frequency of each keyword.</Description>
-    <RepositoryUrl>https://github.com/apiverve/keywordextractor-NET</RepositoryUrl>
+    <RepositoryUrl>https://github.com/apiverve/keywordextractor.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>keyword extractor; keyword extraction; keyword extractor api; keyword extraction api; keyword extractor tool; keyword extraction tool; keyword extractor software; keyword extraction software; keyword extractor service; keyword extraction service; keyword extractor library; keyword extraction library; keyword extractor sdk; keyword extraction sdk; keyword extractor code; keyword extraction code; keyword extractor script; keyword extraction script; keyword extractor program; keyword extraction program; keyword extractor application; keyword extraction application; keyword extractor app; keyword extraction app; keyword extractor utility; keyword extraction utility; keyword extractor helper; keyword extraction helper; keyword extractor helper tool; keyword extraction helper tool; keyword extractor helper software; keyword extraction helper software; keyword extractor helper service; keyword extraction helper service; keyword extractor helper library; keyword extraction helper library; keyword extractor helper sdk; keyword extraction helper sdk; keyword extractor helper code; keyword extraction helper code; keyword extractor helper script; keyword extraction helper script; keyword extractor helper program; keyword extraction helper program; keyword extractor helper application; keyword extraction helper application; keyword extractor helper app; keyword extraction helper app; keyword extractor helper tool; keyword extraction helper tool; keyword extractor helper utility; keyword extraction helper utility; keyword extractor helper</PackageTags>
+    <PackageTags>keyword extractor; keyword extraction; keyword extractor api; keyword extraction api; keyword extractor tool</PackageTags>
     <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PackageIcon>favicon@128.png</PackageIcon>
+    <BaseOutputPath>.\bin</BaseOutputPath>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PackageId>APIVerve.API.KeywordExtractor</PackageId>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Remove="LICENSE" />
+    <None Remove="Readme.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="LICENSE">
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Media\favicon@128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="Readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

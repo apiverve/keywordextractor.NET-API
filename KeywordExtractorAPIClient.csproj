@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.KeywordExtractor</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/keywordextractor</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Keyword Extractor is a simple tool for extracting keywords from a text. It returns the keywords and the frequency of each keyword.</Description>
+    <RepositoryUrl>https://github.com/apiverve/keywordextractor-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>keyword extractor; keyword extraction; keyword extractor api; keyword extraction api; keyword extractor tool; keyword extraction tool; keyword extractor software; keyword extraction software; keyword extractor service; keyword extraction service; keyword extractor library; keyword extraction library; keyword extractor sdk; keyword extraction sdk; keyword extractor code; keyword extraction code; keyword extractor script; keyword extraction script; keyword extractor program; keyword extraction program; keyword extractor application; keyword extraction application; keyword extractor app; keyword extraction app; keyword extractor utility; keyword extraction utility; keyword extractor helper; keyword extraction helper; keyword extractor helper tool; keyword extraction helper tool; keyword extractor helper software; keyword extraction helper software; keyword extractor helper service; keyword extraction helper service; keyword extractor helper library; keyword extraction helper library; keyword extractor helper sdk; keyword extraction helper sdk; keyword extractor helper code; keyword extraction helper code; keyword extractor helper script; keyword extraction helper script; keyword extractor helper program; keyword extraction helper program; keyword extractor helper application; keyword extraction helper application; keyword extractor helper app; keyword extraction helper app; keyword extractor helper tool; keyword extraction helper tool; keyword extractor helper utility; keyword extraction helper utility; keyword extractor helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

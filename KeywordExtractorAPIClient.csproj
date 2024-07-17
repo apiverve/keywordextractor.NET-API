@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Keyword Extractor is a simple tool for extracting keywords from a text. It returns the keywords and the frequency of each keyword.</Description>
+    <Description>Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.</Description>
     <RepositoryUrl>https://github.com/apiverve/keywordextractor.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>keyword extractor; keyword extraction; keyword extractor api; keyword extraction api; keyword extractor tool</PackageTags>

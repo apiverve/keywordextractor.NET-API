@@ -48,9 +48,6 @@ public class keywords
     [JsonProperty("messages")]
     public int messages { get; set; }
 
-    [JsonProperty("july")]
-    public int july { get; set; }
-
     [JsonProperty("systems")]
     public int systems { get; set; }
 
@@ -63,6 +60,12 @@ public class keywords
     [JsonProperty("protocol")]
     public int protocol { get; set; }
 
+    [JsonProperty("july")]
+    public int july { get; set; }
+
+    [JsonProperty("solid")]
+    public int solid { get; set; }
+
     [JsonProperty("ietf")]
     public int ietf { get; set; }
 
@@ -74,9 +77,6 @@ public class keywords
 
     [JsonProperty("account")]
     public int account { get; set; }
-
-    [JsonProperty("solid")]
-    public int solid { get; set; }
 
     [JsonProperty("host")]
     public int host { get; set; }
@@ -178,6 +178,9 @@ public class ResponseObj
 
     [JsonProperty("data")]
     public data data { get; set; }
+
+    [JsonProperty("code")]
+    public int code { get; set; }
 
 }
 

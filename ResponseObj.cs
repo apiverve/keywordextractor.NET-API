@@ -51,6 +51,9 @@ public class keywords
     [JsonProperty("systems")]
     public int systems { get; set; }
 
+    [JsonProperty("ietf")]
+    public int ietf { get; set; }
+
     [JsonProperty("names")]
     public int names { get; set; }
 
@@ -60,23 +63,17 @@ public class keywords
     [JsonProperty("protocol")]
     public int protocol { get; set; }
 
-    [JsonProperty("july")]
-    public int july { get; set; }
+    [JsonProperty("internationalized")]
+    public int internationalized { get; set; }
 
     [JsonProperty("solid")]
     public int solid { get; set; }
 
-    [JsonProperty("ietf")]
-    public int ietf { get; set; }
-
-    [JsonProperty("internationalized")]
-    public int internationalized { get; set; }
-
-    [JsonProperty("articles")]
-    public int articles { get; set; }
-
     [JsonProperty("account")]
     public int account { get; set; }
+
+    [JsonProperty("addressing")]
+    public int addressing { get; set; }
 
     [JsonProperty("host")]
     public int host { get; set; }
@@ -105,17 +102,17 @@ public class keywords
     [JsonProperty("verification")]
     public int verification { get; set; }
 
-    [JsonProperty("addressing")]
-    public int addressing { get; set; }
-
     [JsonProperty("form")]
     public int form { get; set; }
 
     [JsonProperty("format")]
     public int format { get; set; }
 
-    [JsonProperty("technical")]
-    public int technical { get; set; }
+    [JsonProperty("klensin")]
+    public int klensin { get; set; }
+
+    [JsonProperty("july")]
+    public int july { get; set; }
 
     [JsonProperty("tools")]
     public int tools { get; set; }
@@ -141,9 +138,6 @@ public class keywords
     [JsonProperty("smtp")]
     public int smtp { get; set; }
 
-    [JsonProperty("klensin")]
-    public int klensin { get; set; }
-
     [JsonProperty("ascii")]
     public int ascii { get; set; }
 
@@ -155,6 +149,12 @@ public class keywords
 
     [JsonProperty("server")]
     public int server { get; set; }
+
+    [JsonProperty("original")]
+    public int original { get; set; }
+
+    [JsonProperty("archived")]
+    public int archived { get; set; }
 
 }
 

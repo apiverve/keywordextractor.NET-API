@@ -4,184 +4,187 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class keywords
-{
-    [JsonProperty("email")]
-    public int email { get; set; }
+    /// <summary>
+    /// Keywords data
+    /// </summary>
+    public class Keywords
+    {
+        [JsonProperty("email")]
+        public int Email { get; set; }
 
-    [JsonProperty("address")]
-    public int address { get; set; }
+        [JsonProperty("address")]
+        public int Address { get; set; }
 
-    [JsonProperty("mail")]
-    public int mail { get; set; }
+        [JsonProperty("mail")]
+        public int Mail { get; set; }
 
-    [JsonProperty("domain")]
-    public int domain { get; set; }
+        [JsonProperty("domain")]
+        public int Domain { get; set; }
 
-    [JsonProperty("addresses")]
-    public int addresses { get; set; }
+        [JsonProperty("addresses")]
+        public int Addresses { get; set; }
 
-    [JsonProperty("characters")]
-    public int characters { get; set; }
+        [JsonProperty("characters")]
+        public int Characters { get; set; }
 
-    [JsonProperty("retrieved")]
-    public int retrieved { get; set; }
+        [JsonProperty("retrieved")]
+        public int Retrieved { get; set; }
 
-    [JsonProperty("internet")]
-    public int internet { get; set; }
+        [JsonProperty("internet")]
+        public int Internet { get; set; }
 
-    [JsonProperty("message")]
-    public int message { get; set; }
+        [JsonProperty("message")]
+        public int Message { get; set; }
 
-    [JsonProperty("validation")]
-    public int validation { get; set; }
+        [JsonProperty("validation")]
+        public int Validation { get; set; }
 
-    [JsonProperty("mailbox")]
-    public int mailbox { get; set; }
+        [JsonProperty("mailbox")]
+        public int Mailbox { get; set; }
 
-    [JsonProperty("errata")]
-    public int errata { get; set; }
+        [JsonProperty("errata")]
+        public int Errata { get; set; }
 
-    [JsonProperty("allowed")]
-    public int allowed { get; set; }
+        [JsonProperty("allowed")]
+        public int Allowed { get; set; }
 
-    [JsonProperty("messages")]
-    public int messages { get; set; }
+        [JsonProperty("messages")]
+        public int Messages { get; set; }
 
-    [JsonProperty("systems")]
-    public int systems { get; set; }
+        [JsonProperty("systems")]
+        public int Systems { get; set; }
 
-    [JsonProperty("ietf")]
-    public int ietf { get; set; }
+        [JsonProperty("ietf")]
+        public int Ietf { get; set; }
 
-    [JsonProperty("names")]
-    public int names { get; set; }
+        [JsonProperty("names")]
+        public int Names { get; set; }
 
-    [JsonProperty("user")]
-    public int user { get; set; }
+        [JsonProperty("user")]
+        public int User { get; set; }
 
-    [JsonProperty("protocol")]
-    public int protocol { get; set; }
+        [JsonProperty("protocol")]
+        public int Protocol { get; set; }
 
-    [JsonProperty("internationalized")]
-    public int internationalized { get; set; }
+        [JsonProperty("internationalized")]
+        public int Internationalized { get; set; }
 
-    [JsonProperty("solid")]
-    public int solid { get; set; }
+        [JsonProperty("solid")]
+        public int Solid { get; set; }
 
-    [JsonProperty("account")]
-    public int account { get; set; }
+        [JsonProperty("account")]
+        public int Account { get; set; }
 
-    [JsonProperty("addressing")]
-    public int addressing { get; set; }
+        [JsonProperty("addressing")]
+        public int Addressing { get; set; }
 
-    [JsonProperty("host")]
-    public int host { get; set; }
+        [JsonProperty("host")]
+        public int Host { get; set; }
 
-    [JsonProperty("simple")]
-    public int simple { get; set; }
+        [JsonProperty("simple")]
+        public int Simple { get; set; }
 
-    [JsonProperty("transfer")]
-    public int transfer { get; set; }
+        [JsonProperty("transfer")]
+        public int Transfer { get; set; }
 
-    [JsonProperty("mailboxes")]
-    public int mailboxes { get; set; }
+        [JsonProperty("mailboxes")]
+        public int Mailboxes { get; set; }
 
-    [JsonProperty("character")]
-    public int character { get; set; }
+        [JsonProperty("character")]
+        public int Character { get; set; }
 
-    [JsonProperty("quoted")]
-    public int quoted { get; set; }
+        [JsonProperty("quoted")]
+        public int Quoted { get; set; }
 
-    [JsonProperty("additional")]
-    public int additional { get; set; }
+        [JsonProperty("additional")]
+        public int Additional { get; set; }
 
-    [JsonProperty("syntax")]
-    public int syntax { get; set; }
+        [JsonProperty("syntax")]
+        public int Syntax { get; set; }
 
-    [JsonProperty("verification")]
-    public int verification { get; set; }
+        [JsonProperty("verification")]
+        public int Verification { get; set; }
 
-    [JsonProperty("form")]
-    public int form { get; set; }
+        [JsonProperty("form")]
+        public int Form { get; set; }
 
-    [JsonProperty("format")]
-    public int format { get; set; }
+        [JsonProperty("format")]
+        public int Format { get; set; }
 
-    [JsonProperty("klensin")]
-    public int klensin { get; set; }
+        [JsonProperty("klensin")]
+        public int Klensin { get; set; }
 
-    [JsonProperty("july")]
-    public int july { get; set; }
+        [JsonProperty("july")]
+        public int July { get; set; }
 
-    [JsonProperty("tools")]
-    public int tools { get; set; }
+        [JsonProperty("tools")]
+        public int Tools { get; set; }
 
-    [JsonProperty("valid")]
-    public int valid { get; set; }
+        [JsonProperty("valid")]
+        public int Valid { get; set; }
 
-    [JsonProperty("internationalization")]
-    public int internationalization { get; set; }
+        [JsonProperty("internationalization")]
+        public int Internationalization { get; set; }
 
-    [JsonProperty("group")]
-    public int group { get; set; }
+        [JsonProperty("group")]
+        public int Group { get; set; }
 
-    [JsonProperty("system")]
-    public int system { get; set; }
+        [JsonProperty("system")]
+        public int System { get; set; }
 
-    [JsonProperty("services")]
-    public int services { get; set; }
+        [JsonProperty("services")]
+        public int Services { get; set; }
 
-    [JsonProperty("case")]
-    public int case { get; set; }
+        [JsonProperty("case")]
+        public int Case { get; set; }
 
-    [JsonProperty("smtp")]
-    public int smtp { get; set; }
+        [JsonProperty("smtp")]
+        public int Smtp { get; set; }
 
-    [JsonProperty("ascii")]
-    public int ascii { get; set; }
+        [JsonProperty("ascii")]
+        public int Ascii { get; set; }
 
-    [JsonProperty("backslash")]
-    public int backslash { get; set; }
+        [JsonProperty("backslash")]
+        public int Backslash { get; set; }
 
-    [JsonProperty("servers")]
-    public int servers { get; set; }
+        [JsonProperty("servers")]
+        public int Servers { get; set; }
 
-    [JsonProperty("server")]
-    public int server { get; set; }
+        [JsonProperty("server")]
+        public int Server { get; set; }
 
-    [JsonProperty("original")]
-    public int original { get; set; }
+        [JsonProperty("original")]
+        public int Original { get; set; }
 
-    [JsonProperty("archived")]
-    public int archived { get; set; }
+        [JsonProperty("archived")]
+        public int Archived { get; set; }
 
-}
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("url")]
+        public string Url { get; set; }
 
-public class data
-{
-    [JsonProperty("url")]
-    public string url { get; set; }
+        [JsonProperty("keywords")]
+        public Keywords Keywords { get; set; }
 
-    [JsonProperty("keywords")]
-    public keywords keywords { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-}
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }

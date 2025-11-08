@@ -5,6 +5,6 @@ using System.Text;
 namespace APIVerve
 {
     public class KeywordExtractorQueryOptions {
-public string text { get; set; }
+public string Url { get; set; }
 }
 }
